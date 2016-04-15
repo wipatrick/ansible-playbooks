@@ -1,7 +1,0 @@
----
-- hosts: rpi-sensors
-  remote_user: pi
-  become: yes
-  become_method: sudo
-  roles:
-    - {role: './roles/iptables', supervisor_port: "9001", web_ui_host: "10.95.61.26" }
