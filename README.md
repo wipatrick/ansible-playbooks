@@ -5,7 +5,16 @@
 * SSH connection (passwordless)
 
 # Getting Started
-Edit hosts file in inventory folder.
+
+* Test connection 
+
+```
+ansible -i inventory/hosts rpi-sensors -m ping
+```
+
+* Edit hosts file in inventory folder.
+
+* Run 
 
 ```
 ansible-playbook -i inventory/hosts playbook.yml
